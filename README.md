@@ -1,6 +1,7 @@
 # 🧠 Neurovision - Introduction
 ![Basic U-Net Architecture](images/main1.png)
-Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient outcomes.  
+Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient outcomes.
+![ManalJrad](images/MANAL.PNG)
 Manual interpretation of MRI scans by radiologists is time-consuming, subjective, and prone to inter-observer variability.  
 **Neurovision** was created to automate brain MRI abnormality detection with the goal of matching or even exceeding specialist-level consistency and reliability.
 
@@ -21,17 +22,6 @@ An AUB MRI Resident MD checked the benchmarks and annotations of our ensemble co
 # 📈 Neurovision Pipeline Overview
 
 The overall system structure of Neurovision is organized into distinct, modular stages:
-
-```mermaid
-flowchart TD
-    A[MRI Scan Input] --> B[Preprocessing]
-    B --> C[Segmentation Models (U-Net, UNet++, LinkNet, UNet-EfficientNetB4, DGNet)]
-    C --> D[Model Outputs (Probability Maps, Segmentations)]
-    D --> E[Ensemble Learning Stage (Soft Voting, XGBoost, Random Forest)]
-    E --> F[Final Prediction and Abnormality Classification]
-    F --> G[GUI Output / Diagnosis Report]
-
-```
 
 # 🔵 Model 1: Basic U-Net (Model1Training(91.2))
 
@@ -737,7 +727,7 @@ It is particularly well-suited for challenging brain MRI abnormality detection t
 
 # 🧠 Neurovision - Full System Overview and Meta-Ensemble with Gradio GUI
 
-![System Overview](images/GRADIOUI.png)
+![System Overview](images/ens.png)
 
 ---
 
@@ -757,24 +747,6 @@ The pipeline is structured as follows:
 | 6️⃣ | Combine Predictions via Manual Soft Voting |
 | 7️⃣ | Final Classification Output |
 | 8️⃣ | Real-time Inference via Gradio GUI |
-
----
-
-# 🛠 Full System Flowchart
-
-```mermaid
-flowchart TD
-    A[MRI Image Upload (Gradio GUI)] --> B[Preprocessing: Resize + Normalize]
-    B --> C[Segmentation using CNN Base Models]
-    C --> D[Extract Softmax Probability Features]
-    D --> E1[RandomForest Classifier Prediction]
-    D --> E2[XGBoost Classifier Prediction]
-    E1 --> F[Manual Soft Voting Ensemble]
-    E2 --> F
-    F --> G[Final Pixelwise Prediction]
-    G --> H[Reconstruct Segmentation Mask]
-    H --> I[Display Result in Gradio GUI]
-```
 
 ---
 
@@ -855,6 +827,8 @@ mask = lbl.reshape(IN_H, IN_W)
 
 ```python
 import gradio as gr
+
+![System Overview](images/GRADIOUI.png)
 
 def predict_mri(img):
     rgb, full_mask = segment_image(img)
