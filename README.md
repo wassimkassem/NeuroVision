@@ -22,10 +22,7 @@ An AUB MRI Resident MD checked the benchmarks and annotations of our ensemble co
 The overall system structure of Neurovision is organized into distinct, modular stages:
 
 # 🔵 Model 1: Basic U-Net (Model1Training(91.2))
-
-![Basic U-Net Architecture](images/1.png)
-
-
+![UNetBasic](images/1.jpeg)
 
 ### 📚 Original Sources
 
