@@ -1,8 +1,5 @@
 # 🧠 Neurovision - Introduction
-![Basic U-Net Architecture](images/main1.png)
 Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient outcomes.
-![ManalJrad](images/MANAL.PNG)
-Manual interpretation of MRI scans by radiologists is time-consuming, subjective, and prone to inter-observer variability.  
 **Neurovision** was created to automate brain MRI abnormality detection with the goal of matching or even exceeding specialist-level consistency and reliability.
 
 Our approach leverages deep learning and convolutional neural networks (CNNs) to automatically segment, classify, and predict various brain abnormalities such as tumors and neurodegenerative diseases directly from MRI scans.
@@ -17,9 +14,10 @@ Our approach leverages deep learning and convolutional neural networks (CNNs) to
 ---
 
 # 📈 Specialist Review
+![ManalJrad](images/MANAL.PNG)
 An AUB MRI Resident MD checked the benchmarks and annotations of our ensemble code at the end which used all 5 of the models
 
-# 📈 Neurovision Pipeline Overview
+# 📈 Neurovision Models Overview
 
 The overall system structure of Neurovision is organized into distinct, modular stages:
 
@@ -469,8 +467,6 @@ To this end, we developed **DGNet**, which introduces **dense connectivity** and
 ---
 # 🔵 Model 5: DGNet (Dense Global Network with Attention) (DGNet.ipynb)
 
-![DGNet Architecture](images/5.png)
-
 ---
 
 ### 📚 Original Sources
@@ -726,8 +722,7 @@ It is particularly well-suited for challenging brain MRI abnormality detection t
 ---
 
 # 🧠 Neurovision - Full System Overview and Meta-Ensemble with Gradio GUI
-
-![System Overview](images/ens.png)
+![System Overview](images/GRADIOUI.png)
 
 ---
 
@@ -827,8 +822,6 @@ mask = lbl.reshape(IN_H, IN_W)
 
 ```python
 import gradio as gr
-
-![System Overview](images/GRADIOUI.png)
 
 def predict_mri(img):
     rgb, full_mask = segment_image(img)
