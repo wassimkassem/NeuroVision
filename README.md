@@ -1,5 +1,5 @@
 # 🧠 Neurovision - Introduction
-Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient ![Ex1](images/Ex1.PNG) ![Ex2](images/Ex2.PNG) ![Ex3](images/Ex3.PNG)
+Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient ![Ex1](images/Ex1.png) ![Ex2](images/Ex2.png) ![Ex3](images/Ex3.png)
 
 **Neurovision** was created to automate brain MRI abnormality detection with the goal of matching or even exceeding specialist-level consistency and reliability.
 
