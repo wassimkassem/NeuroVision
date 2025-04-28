@@ -1,5 +1,9 @@
 # 🧠 Neurovision - Introduction
-Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient ![Ex1](images/Ex1.png) ![Ex2](images/Ex2.png) ![Ex3](images/Ex3.png)
+Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient <p align="center">
+  <img src="images/Ex1.png" alt="Ex1" width="180"/>
+  <img src="images/Ex2.png" alt="Ex2" width="180"/>
+  <img src="images/Ex3.png" alt="Ex3" width="180"/>
+</p>
 
 **Neurovision** was created to automate brain MRI abnormality detection with the goal of matching or even exceeding specialist-level consistency and reliability.
 
@@ -347,7 +351,7 @@ To achieve high-speed inference while retaining competitive segmentation accurac
 
 LinkNet with EfficientNetB7 backbone allowed us to maintain very high segmentation performance while drastically reducing model size and training time compared to UNet++.  
 However, there was slight loss in fine spatial structure reconstruction for the smallest abnormalities.  
-Thus, to improve spatial resolution and maintain a high-efficiency encoder,  we next moved to **UNet-EfficientNetB4**, which blends UNet’s rich decoding structure with EfficientNet’s encoder power.
+Thus, to improve spatial resolution and maintain a high-efficiency encoder,  we next moved to **UNet-EfficientNetB4**, which blends UNet's rich decoding structure with EfficientNet's encoder power.
 
 ---
 
@@ -720,7 +724,7 @@ It is particularly well-suited for challenging brain MRI abnormality detection t
 ---
 
 # 🧠 Neurovision - Full System Overview and Meta-Ensemble with Gradio GUI
-![Gradio GUI overview](gradio.png)
+![Gradio GUI overview](gradio.PNG)
 
 ---
 
