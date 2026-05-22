@@ -16,8 +16,6 @@ by an AUB MRI resident (MD) to validate clinical plausibility. <p align="center"
   <img src="images/Ex3.png" alt="Ex3" width="180"/>
 </p>
 
-**Neurovision** was created to automate brain MRI abnormality detection with the goal of matching or even exceeding specialist-level consistency and reliability.
-
 Our approach leverages deep learning and convolutional neural networks (CNNs) to automatically segment, classify, and predict various brain abnormalities such as tumors and neurodegenerative diseases directly from MRI scans.
 
 ## 🚀 Project Motivation
