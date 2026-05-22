@@ -1,5 +1,16 @@
-# 🧠 Neurovision - Introduction
-Medical image analysis is a critical field where accurate and early diagnosis can significantly affect patient <p align="center">
+# 🧠 NeuroVision — Introduction
+
+Medical image analysis is a critical field where accurate and early diagnosis can
+significantly affect patient outcomes. Yet manual review of brain MRI scans is
+time-consuming, requires scarce specialist expertise, and is subject to inter-reader
+variability.
+
+**NeuroVision** was created to automate brain-MRI abnormality detection, with the goal
+of matching — or exceeding — specialist-level consistency and reliability. The system
+combines six deep convolutional segmentation models into a lightweight meta-ensemble,
+delivering robust pixel-level detection of tumors and other abnormalities, and exposes
+it all through a real-time Gradio interface. Benchmarks and annotations were reviewed
+by an AUB MRI resident (MD) to validate clinical plausibility. <p align="center">
   <img src="images/Ex1.png" alt="Ex1" width="180"/>
   <img src="images/Ex2.png" alt="Ex2" width="180"/>
   <img src="images/Ex3.png" alt="Ex3" width="180"/>
